@@ -26,7 +26,7 @@
 //! // Render to a scene!
 //! let mut renderer = velato::Renderer::new();
 //! let frame = 0.0; // Arbitrary number chosen. Ensure it's a valid frame!
-//! let transform = vello::kurbo::Affine::IDENTITY;
+//! let transform = kurbo::Affine::IDENTITY;
 //! let alpha = 1.0;
 //! let scene = renderer.render(&composition, frame, transform, alpha);
 //! ```
@@ -89,7 +89,4 @@ pub(crate) mod schema;
 mod error;
 pub use error::Error;
 
-// Re-export vello
-pub use vello;
-
-pub use runtime::{Composition, Renderer, model};
+pub use runtime::{Composition, model};

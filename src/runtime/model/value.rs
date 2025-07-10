@@ -1,8 +1,8 @@
 // Copyright 2024 the Velato Authors
 // SPDX-License-Identifier: Apache-2.0 OR MIT
 
-use vello::kurbo::{self};
-use vello::peniko;
+use kurbo::{self};
+
 
 /// Fixed or animated value.
 #[derive(Clone, Debug)]

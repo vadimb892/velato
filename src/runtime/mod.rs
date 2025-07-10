@@ -1,8 +1,6 @@
 // Copyright 2024 the Velato Authors
 // SPDX-License-Identifier: Apache-2.0 OR MIT
 
-mod render;
-
 use crate::Error;
 use crate::import;
 use crate::schema::Animation;
@@ -10,8 +8,6 @@ use std::collections::HashMap;
 use std::ops::Range;
 
 pub mod model;
-
-pub use render::Renderer;
 
 /// Model of a Lottie file.
 #[derive(Clone, Default, Debug)]

@@ -1,6 +1,5 @@
 [workspace]
 resolver = "2"
-members = ["examples/with_winit", "examples/run_wasm", "examples/scenes"]
 
 [workspace.package]
 edition = "2024"
@@ -99,15 +98,18 @@ clippy.redundant_feature_names = "warn"
 clippy.wildcard_dependencies = "warn"
 # END LINEBENDER LINT SET
 
-[workspace.dependencies]
-# NOTE: Make sure to keep this in sync with the version badge in README.md
-vello = { version = "0.5.0", default-features = false }
+[workspace.dependencies.kurbo]
+version = "0.11.2"
+
+[workspace.dependencies.peniko]
+version = "0.3.1"
 
 [lints]
 workspace = true
 
 [dependencies]
-vello = { workspace = true }
+kurbo = { workspace = true }
+peniko = { workspace = true }
 keyframe = "1.1.1"
 once_cell = "1.21.3"
 thiserror = "2.0.12"
@@ -122,4 +124,3 @@ wasm-bindgen-test = "0.3.50"
 
 [features]
 default = []
-wgpu = ["vello/wgpu"]

@@ -56,7 +56,7 @@ let mut new_scene = vello::Scene::new();
 // Render to a scene!
 let mut renderer = velato::Renderer::new();
 let frame = 0.0; // Arbitrary number chosen. Ensure it's a valid frame!
-let transform = vello::kurbo::Affine::IDENTITY;
+let transform = kurbo::Affine::IDENTITY;
 let alpha = 1.0;
 renderer.render(&composition, frame, transform, alpha, &mut new_scene);
 ```
